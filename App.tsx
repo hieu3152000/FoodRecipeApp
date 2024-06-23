@@ -1,35 +1,15 @@
+// App.js or index.js
 import 'react-native-gesture-handler';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import AppNavigation from './src/navigation/AppNavigator'; // Your main navigator component
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-import AppNavigation from './src/navigation/AppNavigator';
-import WelcomScreen from './src/screens/WelcomScreen';
-
-
-
-function App(): React.JSX.Element {
-  
+function App() {
   return (
-    <AppNavigation/>
+
+      <AppNavigation />
+
   );
 }
-
-
 
 export default App;

@@ -1,8 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import {Button} from 'react-native-paper';
-import MaterialIcon from 'react-native-vector-icons/MaterialIcons';
-import EntypoIcon from 'react-native-vector-icons/Entypo';
 
 function WelcomeScreen({navigation}) {
   return (
@@ -12,17 +10,11 @@ function WelcomeScreen({navigation}) {
         style={styles.image}
       />
 
-      <Text style={styles.title}>
-        Welcome to Food Recipes
-        <MaterialIcon name="zoom-in" size={24} />
-      </Text>
-      <Text style={styles.subtitle}>
-        Discover and share the best recipes!
-        <EntypoIcon name="video-camera" size={30} />
-      </Text>
+      <Text style={styles.title}>Welcome to Food Recipes</Text>
+      <Text style={styles.subtitle}>Discover and share the best recipes!</Text>
       <Button
         mode="contained"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.navigate('Login')}
         style={styles.button}
         labelStyle={{color: 'white', fontWeight: 'bold'}}
         buttonColor="#84251E">
